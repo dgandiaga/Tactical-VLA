@@ -40,7 +40,7 @@ Unlike text-based models that use Softmax for discrete token selection, this con
 
 ## **Future Roadmap: The Project Vision**
 
-1. **Action Tokenization:** Moving from continuous vectors to discrete "Action Tokens" to enable **Knowledge Distillation** from 30B Flagship models to Edge-optimized Student models.
+1. **Action Tokenization:** Implement **Linear Alignment** (https://arxiv.org/abs/2312.16886) to enable **Knowledge Distillation** from 30B Flagship models to Edge-optimized Student models for continous control.
 2. **Aerostack 2.0 Integration:** Wrapping this backbone in a ROS2 node to evaluate Foundation Model-based mission planning against traditional Behavior Trees.
 3. **Jetson Optimization:** Applying INT8 Quantization and TensorRT pruning to fit the distilled model on the AGX Orin for real-time onboard execution.
 
